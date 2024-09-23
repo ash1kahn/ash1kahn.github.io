@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nabla&family=Protest+Revolution&family=Sankofa+Display&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&family=Stick+No+Bills:wght@200..800&family=UnifrakturMaguntia&display=swap');
 
+:root {
+    --box-skew: 30deg;
+    --box-unskew: calc(-1 * var(--box-skew));
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -37,19 +42,18 @@ body {
 }
 
 .box {
-    background-color: white;
     width: fit-content;
-    padding: 5px;
-}
 
-.box .inner {
-    width: fit-content;
     background-color: black;
     padding: 5px 40px;
+
+    border: 5px solid white;
+
+    transform: skew(var(--box-skew));
 }
 
-.box, .box .inner {
-    clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 10% 100%);
+.box * {
+    transform: skew(var(--box-unskew));
 }
 
 h1 {
