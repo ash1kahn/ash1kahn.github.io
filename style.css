@@ -56,6 +56,28 @@ body {
     transform: skew(var(--box-unskew));
 }
 
+.nav {
+    background-color: black;
+}
+
+.nav a {
+    float: left;
+    color: aquamarine;
+    text-align: center;
+    padding: 14px 16px;
+    font-family: 'Shantell Sans';
+}
+
+.nav a:hover {
+    background-color: cadetblue;
+    color: black;
+}
+
+.nav a.active {
+    background-color: cornflowerblue;
+    color: aliceblue;
+}
+
 h1 {
     text-align: center;
     font-family: 'Sankofa Display';
