@@ -70,7 +70,16 @@ body {
 .nav a {
     text-align: center;
     padding: 14px 16px;
-    display: block;
+    display: inline-block;
+}
+
+.pic {
+    max-width: 100%;
+    margin-left: 75%;
+    margin-top: 20%;
+    width: auto;
+    height: 500px;
+    object-fit: contain;
 }
 
 h1 {
