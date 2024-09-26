@@ -57,25 +57,20 @@ body {
 }
 
 .nav {
-    background-color: black;
+    font-family: 'Stick No Bills';
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav a:visited{
+    color:whitesmoke;
 }
 
 .nav a {
-    float: left;
-    color: aquamarine;
     text-align: center;
     padding: 14px 16px;
-    font-family: 'Shantell Sans';
-}
-
-.nav a:hover {
-    background-color: cadetblue;
-    color: black;
-}
-
-.nav a.active {
-    background-color: cornflowerblue;
-    color: aliceblue;
+    display: block;
 }
 
 h1 {
