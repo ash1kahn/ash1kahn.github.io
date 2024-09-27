@@ -75,16 +75,20 @@ body {
 
 .pic {
     max-width: 100%;
-    margin-left: 75%;
-    margin-top: 20%;
     width: auto;
     height: 500px;
     object-fit: contain;
 }
 
+.bottom {
+    position: fixed;
+    bottom: 0;
+}
+
 h1 {
     text-align: center;
     font-family: 'Sankofa Display';
+    color: aliceblue;
 }
 
 h2 {
@@ -93,4 +97,9 @@ h2 {
 
 p {
     font-family: 'Shantell Sans';
+}
+
+h6 {
+    font-family: 'Sankofa Display';
+    font-size: small;
 }

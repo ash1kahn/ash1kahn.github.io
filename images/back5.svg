@@ -3,4 +3,5 @@
     <path d="M5 0 L100 0 L100 55 Z" style="fill:#FFFFFF;"/>
     <path d="M0 35 L19 60 L0 75 Z" style="fill:#FFFFFF;"/>
     <path d="M22 100 L100 75 L100 100 Z" style="fill:#FFFFFF;"/>
+    <path d="M0 100 L0 97 L100 97 L100 100 Z" style="fill:#000000;"/>
 </svg>
