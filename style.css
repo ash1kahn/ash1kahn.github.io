@@ -110,14 +110,17 @@ body {
 }
 
 .hover {
-    width: 1000px;
-    height: 500px;
-    background-image: url("playingbass.webp");
+    width: 50vw;
+    height: 100vh;
+    position:fixed;
+    top: 0;
+    left: 0;
+    background-image: url("/images/playingbass.webp");
     background-size: cover;
 }
 
 .hover:hover {
-    background-image: url("miyagi.webp");
+    background-image: url("/images/miyagi.webp");
 }
 
 h1 {
