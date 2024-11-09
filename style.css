@@ -123,19 +123,6 @@ body {
     background-image: url("/images/sittingportrait.webp");
 }
 
-.animate {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    animation-name: move;
-    animation-duration: 2s;
-}
-
-@keyframes move {
-    from {left:0px; top:0px;}
-    to {left:100px; top:100px}
-}
-
 h1 {
     text-align: center;
     font-family: 'Protest Revolution';
