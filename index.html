@@ -9,46 +9,57 @@
         <title>Asher McMahon</title>
         
         <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="/styles/index.css">
     </head>
     <body>
+        <div class="preload">
+            <!-- cache this image so it loads faster on hover -->
+            <img src="/images/altportrait.webp">
+        </div>
+
         <div class="background">
-            <img src="images/back1.svg" class="background">
+            <!-- creates a triangle to split the sides of the home page -->
+            <svg viewBox="0 0 100 100">
+                <path d="M50 0 L100 0 L100 100 L20 100 Z" style="fill: rgba(0,0,0,0.8);">
+            </svg>
         </div>
 
-        <div class="home">
-            <div class="title">
-                <h1>Asher McMahon</h1>
-            </div>
+        <div class="content">
+            <!-- uses background-image to change which portrait is shown -->
+            <div class="picture"></div>
 
-            <div class="title nav" >
-                <a href="/">Home</a>
-                <a href="/about">About Me</a>
-                <a href="/artwork">Artwork</a>
-                <a href="/school">School Projects</a>
-            </div>
+            <!-- basic information about me -->
+            <div class="info">
+                <h1 class="name">Asher McMahon</h1>
 
-            <div class="center">
-                <p>ashervm05@gmail.com</p>
-            </div>
-
-            <div class="center">
-                <h2>Bridging the divide between art and engineering</h2>
-            </div>
-
-            <div class="center">
-                <p>Coming from a creative and technical background, I have a unique perspective that sets me apart.<br>
-                I am more well suited for creative problem solving because I<br>
-                Creativity helps me stay curious because I know that there are many ways to do something, and looking at problem differently<br>
-                is the same as looking at them creatively.<br>
-                Skills like perserverance and critical thinking blend well with creativity and multiple perspectives.<br></p>
+                <div class="nav">
+                    <a href="/">Home</a>
+                    <a href="/about">About Me</a>
+                    <a href="/artwork">Artwork</a>
+                    <a href="/projects">Projects</a>
+                    <a href="/contact">Contact</a>
+                </div>
+                
+                <!-- TODO: a better mission statement -->
+                <h2 class="mission">Building Stuff or Something</h2>
+                
+                <!-- TODO: a much better personal statement -->
+                <p class="statement">
+                    Coming from a creative and technical background, I have a
+                    unique perspective that sets me apart. I am more well
+                    suited for creative problem solving because I Creativity
+                    helps me stay curious because I know that there are many
+                    ways to do something, and looking at problem differently is
+                    the same as looking at them creatively. Skills like
+                    perserverance and critical thinking blend well with
+                    creativity and multiple perspectives.
+                </p>
+                
+                <!-- TODO: probably not the best thing to advertise :3 -->
+                <p class="statement">
+                    That being said writing is not my strong suite and I have level 2 PIAAC literacy.
+                </p>
             </div>
         </div>
-
-        <div class="pic hover"></div>
-
-        <div class="bottom">
-            <h6>Website made by Asher McMahon and <a class="nav" href="https://www.anastasiajsokol.com">Anastasia Sokol</a></h6>
-        </div>
-
     </body>
 </html>

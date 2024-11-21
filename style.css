@@ -3,6 +3,18 @@
 :root {
     --box-skew: 30deg;
     --box-unskew: calc(-1 * var(--box-skew));
+
+    --dark-theme-color: rgb(24, 0, 97);
+    --theme-color: rgb(0, 35, 122);
+    --light-theme-color: rgb(10, 42, 128);
+
+    --title-font: 'Protest Revolution', Helvetica;
+    --title-color: #f0f8ff;
+
+    --content-font: Helvetica;
+    --content-color: #f0f8ff;
+
+    --link-font: 'Stick No Bills', Helvetica;
 }
 
 * {
@@ -11,41 +23,22 @@
 }
 
 body {
-    background: linear-gradient(0deg, rgb(42, 0, 97) 0%, rgb(10, 42, 128) 50%, rgb(0, 35, 122) 100%); 
+    background: linear-gradient(to bottom, var(--light-theme-color), var(--theme-color), var(--dark-theme-color)); 
     color: white;
+
+    min-height: 100vh;
 }
 
 .background {
-    position: absolute;
+    position: fixed;
     
-    right: 0;
     left: 0;
     top: 0;
 
     z-index: -10;
-}
 
-.background img {
-    position: static;
-    
     height: 100vh;
     width: 100vw;
-
-    display: block
-}
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-.title {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
 }
 
 .box {
@@ -61,83 +54,4 @@ body {
 
 .box * {
     transform: skew(var(--box-unskew));
-}
-
-.nav {
-    font-family: 'Stick No Bills';
-    color: white;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.nav a:visited{
-    color:whitesmoke;
-}
-
-.nav a {
-    text-align: center;
-    padding: 14px 16px;
-    display: inline-block;
-}
-
-.pic {
-    max-width: 100%;
-    width: auto;
-    height: 500px;
-    object-fit: contain;
-}
-
-.bottom {
-    position: fixed;
-    bottom: 0;
-}
-
-.row {
-    top: 60vh;
-    left: 0;
-    height: 40vh;
-    width: 100vw;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: end;
-}
-
-.home {
-    margin-left: 30%; 
-    margin-right: auto; 
-    margin-top: 20%; 
-    margin-bottom: auto;
-}
-
-.hover {
-    width: 50vw;
-    height: 100vh;
-    position:fixed;
-    top: 0;
-    left: 0;
-    background-image: url("/images/playingbass.webp");
-    background-size: cover;
-}
-
-.hover:hover {
-    background-image: url("/images/sittingportrait.webp");
-}
-
-h1 {
-    text-align: center;
-    font-family: 'Protest Revolution';
-    color: aliceblue;
-}
-
-h2 {
-    font-family: 'Shantell Sans';
-}
-
-p {
-    font-family: 'Shantell Sans';
-}
-
-h6 {
-    font-family: 'Shantell Sans';
-    font-size: small;
 }

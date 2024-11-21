@@ -1,0 +1,65 @@
+.preload {
+    /* hide preloaded files */
+    display: none;
+}
+
+.content {
+    display: flex;
+}
+
+.content .picture {
+    width: 50vw;
+    height: 100vh;
+
+    background-image: url("/images/portrait.webp");
+    background-position: bottom;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.content .picture:hover {
+    background-image: url("/images/altportrait.webp");
+}
+
+.content .info {    
+    padding: 50px;
+    flex-grow: 1;
+}
+
+.content .info .name {
+    font-family: var(--title-font);
+    color: var(--title-color);
+
+    text-align: center;
+
+    margin-top: 5vh;
+}
+
+.content .info .nav {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 20px 0;
+}
+
+.content .info .nav a {
+    font-family: var(--link-font);
+    color: var(--content-color);
+}
+
+.content .info .nav a:hover {
+    color: var(--content-color);
+}
+
+.content .info .mission {
+    font-family: var(--content-font);
+    color: var(--content-color);
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+.content .info .statement {
+    max-width: 40vw;
+}
