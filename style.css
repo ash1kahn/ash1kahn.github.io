@@ -4,6 +4,7 @@
     --box-skew: 30deg;
     --box-unskew: calc(-1 * var(--box-skew));
 
+    --darker-theme-color: rgb(0, 17, 61);
     --dark-theme-color: rgb(24, 0, 97);
     --theme-color: rgb(0, 35, 122);
     --light-theme-color: rgb(10, 42, 128);
@@ -23,7 +24,7 @@
 }
 
 body {
-    background: linear-gradient(to bottom, var(--light-theme-color), var(--theme-color), var(--dark-theme-color)); 
+    background: linear-gradient(to bottom, var(--dark-theme-color), var(--darker-theme-color)); 
     color: white;
 
     min-height: 100vh;
