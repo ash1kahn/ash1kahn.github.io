@@ -11,7 +11,6 @@
 }
 
 body {
-    background-image: url("/images/back2.svg");
     background: linear-gradient(0deg, rgb(42, 0, 97) 0%, rgb(10, 42, 128) 50%, rgb(0, 35, 122) 100%); 
     color: white;
 }
