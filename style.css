@@ -11,6 +11,7 @@
 }
 
 body {
+    background-image: url("/images/back2.svg");
     background: linear-gradient(0deg, rgb(42, 0, 97) 0%, rgb(10, 42, 128) 50%, rgb(0, 35, 122) 100%); 
     color: white;
 }
@@ -92,16 +93,6 @@ body {
     bottom: 0;
 }
 
-.row {
-    top: 60vh;
-    left: 0;
-    height: 40vh;
-    width: 100vw;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: end;
-}
-
 .home {
     margin-left: 30%; 
     margin-right: auto; 
@@ -121,6 +112,15 @@ body {
 
 .hover:hover {
     background-image: url("/images/sittingportrait.webp");
+}
+
+.row {
+    white-space: nowrap;
+}
+
+row, li {
+    list-style: none;
+    display: inline;
 }
 
 h1 {
