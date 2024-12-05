@@ -16,7 +16,7 @@ body {
     height: 100vh;
 
     background-image: url("/images/portrait.webp");
-    background-position: bottom;
+    background-position: 90px bottom;
 
     background-size: contain;
     background-repeat: no-repeat;
@@ -24,6 +24,7 @@ body {
 
 .content .picture:hover {
     background-image: url("/images/altportrait.webp");
+    background-position: 250px 220px;
 }
 
 .content .info {    
