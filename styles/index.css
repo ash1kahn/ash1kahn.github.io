@@ -3,6 +3,10 @@
     display: none;
 }
 
+body {
+    background: linear-gradient(to bottom, var(--light-theme-color), var(--theme-color), var(--dark-theme-color)); 
+}
+
 .content {
     display: flex;
 }
