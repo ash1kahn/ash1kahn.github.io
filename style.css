@@ -1,142 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Nabla&family=Protest+Revolution&family=Sankofa+Display&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&family=Stick+No+Bills:wght@200..800&family=UnifrakturMaguntia&display=swap');
-
-:root {
-    --box-skew: 30deg;
-    --box-unskew: calc(-1 * var(--box-skew));
-}
-
 * {
     padding: 0;
     margin: 0;
 }
 
 body {
-    background: linear-gradient(0deg, rgb(42, 0, 97) 0%, rgb(10, 42, 128) 50%, rgb(0, 35, 122) 100%); 
+    background-color: #222;
     color: white;
 }
 
-.background {
-    position: absolute;
-    
-    right: 0;
+#screen {
+    position: fixed;
     left: 0;
     top: 0;
 
-    z-index: -10;
-}
-
-.background img {
-    position: static;
-    
     height: 100vh;
     width: 100vw;
-
-    display: block
-}
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-.title {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.box {
-    width: fit-content;
-
-    background-color: black;
-    padding: 5px 40px;
-
-    border: 5px solid white;
-
-    transform: skew(var(--box-skew));
-}
-
-.box * {
-    transform: skew(var(--box-unskew));
-}
-
-.nav {
-    font-family: 'Stick No Bills';
-    color: white;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.nav a:visited{
-    color:whitesmoke;
-}
-
-.nav a {
-    text-align: center;
-    padding: 14px 16px;
-    display: inline-block;
-}
-
-.pic {
-    max-width: 100%;
-    width: auto;
-    height: 500px;
-    object-fit: contain;
-}
-
-.bottom {
-    position: fixed;
-    bottom: 0;
-}
-
-.home {
-    margin-left: 30%; 
-    margin-right: auto; 
-    margin-top: 20%; 
-    margin-bottom: auto;
-}
-
-.hover {
-    width: 50vw;
-    height: 100vh;
-    position:fixed;
-    top: 0;
-    left: 0;
-    background-image: url("/images/playingbass.webp");
-    background-size: cover;
-}
-
-.hover:hover {
-    background-image: url("/images/sittingportrait.webp");
-}
-
-.row {
-    white-space: nowrap;
-}
-
-row, li {
-    list-style: none;
-    display: inline;
-}
-
-h1 {
-    text-align: center;
-    font-family: 'Protest Revolution';
-    color: aliceblue;
-}
-
-h2 {
-    font-family: 'Shantell Sans';
-}
-
-p {
-    font-family: 'Shantell Sans';
-}
-
-h6 {
-    font-family: 'Shantell Sans';
-    font-size: small;
 }
